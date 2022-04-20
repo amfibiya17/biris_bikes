@@ -1,8 +1,18 @@
-require "docking_station"
+require "bike"
 
 describe Bike do
-  it "this bike works" do
-    bike = Bike.new
-    expect(bike).to be_working
+
+  describe "#initialize" do
+    it "initializes with #working? returning true" do
+      expect(subject).to be_working
+    end
   end
+
+  describe "#report_broken" do
+    it "reasons #working? to return false" do
+      subject.report_broken
+      expect(subject).to_not be_working
+    end
+  end
+
 end

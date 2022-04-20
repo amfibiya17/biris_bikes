@@ -10,9 +10,3 @@ class DockingStation
   end
   
 end
-
-class Bike
-  def working?
-    true
-  end
-end
