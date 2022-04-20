@@ -21,7 +21,7 @@ describe DockingStation do
   it "Feature test - dock a bike at the docking station" do
     station = DockingStation.new
     bike = Bike.new
-    expect(station).to respond_to(:dock).with(1).argument
+    expect(station.dock(bike)).to eq(bike)
   end
 
 end
